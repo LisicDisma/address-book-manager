@@ -9,17 +9,16 @@ class Contact:
     """
     Класс для хранения контактной информации человека.
     Инкапсулирует данные: имя, телефон, email, а также объект Address.
-    
-    Атрибуты:
-        name (str): Имя контакта.
-        phone (str): Номер телефона.
-        email (str): Адрес электронной почты.
-        address (Address): Объект адреса.
     """
     
     def __init__(self, name: str, phone: str, email: str, address: Address):
         """
-        Инициализация нового контакта.
+        Базовый конструктор класса.
+        
+        :param name: Имя контакта.
+        :param phone: Телефона крнтакта.
+        :param email: email контакта.
+        :param address: Адресс контакта
         """
         if not isinstance(address, Address):
             raise TypeError("Аргумент 'address' должен быть экземпляром класса Address.")

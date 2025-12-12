@@ -1,18 +1,5 @@
 
-import address_book_manager import AddressBook, Contact, Address
-
-try:
-    from address_book_manager.address import Address
-    from address_book_manager.contact import Contact
-    from address_book_manager.address_book import AddressBook
-except ImportError:
-   
-    import os
-    sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
-    from address_book_manager.address import Address
-    from address_book_manager.contact import Contact
-    from address_book_manager.address_book import AddressBook
-
+from address_book_manager import AddressBook, Contact, Address
 
 def main():
     """
@@ -59,5 +46,3 @@ def main():
     
     print("\n=== Демонстрация завершена ===")
 
-if __name__ == "__main__":
-    main()
