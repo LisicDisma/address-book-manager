@@ -1,6 +1,6 @@
 """
 Модуль AddressBook для управления коллекцией контактов.
-Предоставляет функциональность для добавления, удаления, поиска и экспорта.
+Функциональность для добавления, удаления, поиска и экспорта
 """
 
 import json
@@ -9,21 +9,21 @@ from .contact import Contact
 
 class AddressBook:
     """
-    Класс-контейнер для хранения и управления коллекцией объектов Contact.
+    Для хранения и управления коллекцией объектов Contact
     
     Атрибуты:
-        contacts (List[Contact]): Список объектов Contact.
+        contacts (List[Contact]): Список объектов Contact
     """
     
     def __init__(self):
         """
-        Инициализация пустой адресной книги.
+        Инициализация пустой адресной книги
         """
         self.contacts: List[Contact] = []
 
     def add_contact(self, contact: Contact):
         """
-        Добавляет новый контакт в адресную книгу.
+        Добавляем новый контакт в адресную книгу
         """
         if not isinstance(contact, Contact):
             raise TypeError("Можно добавлять только экземпляры класса Contact.")
@@ -32,8 +32,8 @@ class AddressBook:
 
     def delete_contact(self, name_or_phone: str) -> bool:
         """
-        Удаляет контакт по имени или телефону.
-        Возвращает True при успешном удалении, иначе False.
+        Удаляет контакт по имени или телефону
+        Возвращает True при успешном удалении, иначе False
         """
         initial_count = len(self.contacts)
         self.contacts = [
@@ -60,7 +60,7 @@ class AddressBook:
 
     def edit_contact(self, name_or_phone: str, new_data: dict) -> bool:
         """
-        Находит контакт и редактирует его данные.
+        Находим контакт и редактирует его данные.
         'new_data' - словарь с полями для обновления.
         """
         for contact in self.contacts:
@@ -112,7 +112,8 @@ class AddressBook:
             print(f"Ошибка при экспорте в файл: {e}")
 
     def __str__(self):
-        """Возвращает строковое представление всей адресной книги."""
+        """Возвращаю строковое представление всей адресной книги"""
         if not self.contacts:
             return "Адресная книга пуста."
+
         return "\n---\n".join([str(c) for c in self.contacts])
