@@ -1,10 +1,10 @@
 """
-Модуль Address для представления адресной информации.
+Модуль Address для представления адресной информации
 """
 
 class Address:
     """
-    Класс для хранения деталей адреса.
+    Класс для хранения деталей адреса
     
     Атрибуты:
         street (str): Название улицы.
@@ -14,7 +14,7 @@ class Address:
     
     def __init__(self, street: str, city: str, zip_code: str):
         """
-        Инициализация нового адреса.
+        Инициализируем новый адрес
         """
         if not all([isinstance(arg, str) for arg in [street, city, zip_code]]):
             raise TypeError("Все аргументы адреса должны быть строками.")
@@ -25,22 +25,23 @@ class Address:
 
  
     def get_full_address(self) -> str:
-        """Возвращает полный адрес в формате: Улица, Город, Индекс."""
+        """Возвращает полный адрес в формате: улица, Город, Индекс."""
         return f"{self.__street}, {self.__city}, {self.__zip_code}"
 
 
     def set_street(self, street: str):
-        """Устанавливает новое значение улицы."""
+        """Устанавливает новое значение улиц"""
         self.__street = street
 
     def set_city(self, city: str):
-        """Устанавливает новое значение города."""
+        """Устанавливаю новое значение города"""
         self.__city = city
 
     def set_zip_code(self, zip_code: str):
-        """Устанавливает новое значение почтового индекса."""
+        """Устанавливает новое значение почтового индекса"""
         self.__zip_code = zip_code
 
     def __str__(self):
-        """Возвращает строковое представление объекта Address."""
+        """Возвращает строковое представление обекта Address"""
+
         return self.get_full_address()
