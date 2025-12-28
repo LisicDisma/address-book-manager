@@ -31,17 +31,24 @@ class Address:
 
 
     def set_street(self, street: str):
-        """Устанавливает новое значение улицы."""
+        """Устанавливает новое значение улицы.
+        :param street: Название улицы
+        """
         self.__street = street
 
     def set_city(self, city: str):
-        """Устанавливает новое значение города."""
+        """Устанавливает новое значение города.
+        :param city: Название города
+        """
         self.__city = city
 
     def set_zip_code(self, zip_code: str):
-        """Устанавливает новое значение почтового индекса."""
+        """Устанавливает новое значение почтового индекса.
+        :param zip_code: Почтовый индекс
+        """
         self.__zip_code = zip_code
 
     def __str__(self):
         """Возвращает строковое представление объекта Address."""
+
         return self.get_full_address()
