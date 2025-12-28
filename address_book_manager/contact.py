@@ -46,18 +46,25 @@ class Contact:
 
  
     def set_name(self, name: str):
-        """Устанавливает новое имя контакта."""
+        """Устанавливает новое имя контакта.
+        :param name: Новое имя
+        """
         self.__name = name
 
     def set_phone(self, phone: str):
-        """Устанавливает новый телефон контакта."""
+        """Устанавливает новый телефон контакта.
+        :param phone: Номер телефона
+        """
         self.__phone = phone
 
     def set_email(self, email: str):
-        """Устанавливает новый email контакта."""
+        """Устанавливает новый email контакта.
+        :param email: Электронная почта
+        """
         self.__email = email
 
     def __str__(self):
         """Возвращает строковое представление объекта Contact."""
         return (f"Имя: {self.__name}, Телефон: {self.__phone}, Email: {self.__email}, "
+
                 f"Адрес: {self.__address.get_full_address()}")
