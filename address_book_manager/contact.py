@@ -68,3 +68,4 @@ class Contact:
         return (f"Имя: {self.__name}, Телефон: {self.__phone}, Email: {self.__email}, "
 
                 f"Адрес: {self.__address.get_full_address()}")
+if __name__ == '__main__':
