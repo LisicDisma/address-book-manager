@@ -52,3 +52,6 @@ class Address:
         """Возвращает строковое представление объекта Address."""
 
         return self.get_full_address()
+
+if __name__ == '__main__':
+
