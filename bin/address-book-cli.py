@@ -1,7 +1,7 @@
 
 from address_book_manager import AddressBook, Contact, Address
 
-def main():
+if __name__ == '__main__':
     """
     Главная функция для демонстрации работы адресной книги.
     """
@@ -45,8 +45,3 @@ def main():
     book.export_to_json("my_contacts.json")
     
     print("\n=== Демонстрация завершена ===")
-
-if __name__ == "__main__":
-    main()
-
-
