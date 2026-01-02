@@ -1,0 +1,11 @@
+README.md
+setup.py
+address_book_manager/__init__.py
+address_book_manager/address.py
+address_book_manager/address_book.py
+address_book_manager/contact.py
+address_book_manager.egg-info/PKG-INFO
+address_book_manager.egg-info/SOURCES.txt
+address_book_manager.egg-info/dependency_links.txt
+address_book_manager.egg-info/top_level.txt
+bin/address-book-cli.py

@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Петр Петров",
+        "phone": "79110001122",
+        "email": "new.petrov@test.ru",
+        "address": {
+            "street": "Ул. Пушкина",
+            "city": "5",
+            "zip_code": "Новый Город"
+        }
+    }
+]
