@@ -120,3 +120,4 @@ class AddressBook:
         return "\n---\n".join([str(c) for c in self.contacts])
 
 if __name__ == '__main__':
+    ...

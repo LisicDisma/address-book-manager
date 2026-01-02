@@ -69,3 +69,4 @@ class Contact:
 
                 f"Адрес: {self.__address.get_full_address()}")
 if __name__ == '__main__':
+    ...

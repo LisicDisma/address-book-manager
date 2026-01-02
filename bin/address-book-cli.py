@@ -1,5 +1,6 @@
-
-from address_book_manager import AddressBook, Contact, Address
+from address_book_manager.contact import Contact
+from address_book_manager.address import Address
+from address_book_manager.address_book import AddressBook
 
 if __name__ == '__main__':
     """

@@ -10,3 +10,4 @@ from .address_book import AddressBook
 __all__ = ["Address", "Contact", "AddressBook"]
 
 if __name__ == '__main__':
+    ...
